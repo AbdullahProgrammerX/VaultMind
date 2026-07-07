@@ -1,0 +1,44 @@
+# ============================================================
+# VaultMind — Python Dependencies
+# ============================================================
+# Her kütüphanenin yanında ne için kullanıldığı açıklanmıştır.
+# Versiyonlar 2026 Temmuz itibarıyla günceldir.
+
+# ---- Core Framework ----
+fastapi>=0.115.0          # Web API framework (async, modern)
+uvicorn[standard]>=0.30.0 # ASGI server (FastAPI'yi çalıştırır)
+pydantic>=2.9.0           # Data validation & settings
+pydantic-settings>=2.5.0  # .env dosyasından konfigürasyon okuma
+
+# ---- LLM & AI ----
+langchain>=0.3.0          # LLM framework (prompt, chain, loader)
+langchain-community>=0.3.0 # Community integrations (Ollama, etc.)
+langchain-ollama>=0.3.0   # Ollama specific integration
+langgraph>=0.4.0          # Multi-agent orchestration (stateful graphs)
+
+# ---- Vector Database ----
+chromadb>=0.5.0           # Vector database (Phase 2-3, later Qdrant)
+
+# ---- Document Processing ----
+python-docx>=1.1.0        # DOCX file reading
+pypdf>=4.0.0              # PDF file reading
+python-multipart>=0.0.9   # File upload support for FastAPI
+
+# ---- Database ----
+sqlalchemy>=2.0.0         # ORM (Object-Relational Mapping)
+asyncpg>=0.29.0           # Async PostgreSQL driver
+psycopg2-binary>=2.9.0    # PostgreSQL driver (sync, for migrations)
+alembic>=1.13.0           # Database migration tool
+
+# ---- Authentication ----
+python-jose[cryptography]>=3.3.0  # JWT token handling
+passlib[bcrypt]>=1.7.0             # Password hashing
+
+# ---- Utilities ----
+python-dotenv>=1.0.0      # .env file loading (backup for pydantic)
+httpx>=0.27.0             # Async HTTP client (for Ollama API calls)
+rich>=13.0.0              # Beautiful terminal output (for CLI tests)
+
+# ---- Testing ----
+pytest>=8.0.0             # Test framework
+pytest-asyncio>=0.23.0    # Async test support

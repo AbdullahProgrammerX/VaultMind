@@ -1,0 +1,57 @@
+# ============================================================
+# VaultMind .gitignore
+# Python backend + Node.js frontend + project-specific files
+# ============================================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# ---- Node.js / Frontend ----
+node_modules/
+.next/
+out/
+.turbo/
+
+# ---- Environment & Secrets ----
+# CRITICAL: Never commit secrets!
+.env
+.env.local
+.env.production
+
+# ---- Databases ----
+*.db
+*.sqlite3
+chroma_db/
+qdrant_data/
+
+# ---- IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- Test & Coverage ----
+.pytest_cache/
+htmlcov/
+.coverage
