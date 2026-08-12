@@ -34,6 +34,8 @@ out/
 *.db
 *.sqlite3
 chroma_db/
+test_chroma_db/
+**/test_chroma_db/
 qdrant_data/
 
 # ---- IDE ----
